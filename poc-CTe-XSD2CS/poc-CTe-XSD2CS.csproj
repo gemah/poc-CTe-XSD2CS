@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command=".\xsdJob.bat" />
+    <Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File xsdJob.ps1" />
   </Target>
 
 </Project>
